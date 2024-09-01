@@ -89,12 +89,15 @@ body {
     /* margin-right: 250px !important;
     padding-right: 600px !important; */
     padding-bottom: 5% !important;
+    margin-top: 22% !important;
 }
 /*  */
 .num7 {
-    position: absolute !important;
+    position: static !important;
+    /* position: absolute !important; */
     /* left: 10%;
     right: 5%;  */
+    margin-top: 20px !important;
     top: 60% !important;
     
     /* bottom: 100% !important; */
@@ -102,67 +105,78 @@ body {
 }
 
 .num1 {
-    position: relative !important;
-    /* left: 39.5% !important; */
+    position: static !important;
+    margin-top: 7px !important;
+    /* position: relative !important;
+    
     right: 40% !important;
-    /* top: 72%; */
-    /* bottom: 50% !important; */
+    
 margin-right: 149px !important;
-margin-top: 97px !important;
-/* margin-bottom: 42.5px !important; */
+margin-top: 18px !important; */
+
 }
 
 .num2 {
-    position: absolute;
+    position: static !important;
+    margin-top: 7px !important;
+
+
+
+    /* position: absolute;
     left: 51% !important;
     right: 5%;
-    /* top: 72% !important; */
-    top: 66% !important;
+    top: 66% !important; */
 
 
 }
 
 .num3 {
-    position: relative !important;
-    /* left: 39.5% !important; */
-    right: 40% !important;
-    /* top: 72%; */
-    /* bottom: 50% !important; */
-margin-right: 149px !important;
-margin-top: 1px !important;
 
-/* margin-bottom: 16px !important; */
+    position: static !important;
+    margin-top: 1px !important;
+
+    /* position: relative !important;
+   
+    right: 40% !important;
+  
+margin-right: 149px !important;
+margin-top: 1px !important; */
+
+
 
 }
 
 .num4 {
-    position: absolute;
+
+    position: static !important;
+    margin-top: 1px !important;
+
+
+    /* position: absolute;
     left: 51% !important;
     right: 5%;
-    /* top: 72% !important; */
-    top: 71.5% !important;
+    top: 71.5% !important; */
 
 
 }
 
 .num5 {
-    position: relative !important;
-    /* left: 39.5% !important; */
+    position: static !important;
+    margin-top: 1px !important;
+    /* position: relative !important;
     right: 40% !important;
-    /* top: 72%; */
-    /* bottom: 50% !important; */
 margin-right: 149px !important;
-margin-top: 1px !important;
-/* margin-bottom: 16px !important; */
+margin-top: 1px !important; */
 
 }
 
 .num6 {
-    position: absolute;
+    position: static !important;
+    margin-top: 1px !important;
+    /* position: absolute;
     left: 51% !important;
     right: 5%;
-    /* top: 72% !important; */
-    top: 77.6% !important;
+    top: 77.6% !important; */
 }
 
 .button:hover {
