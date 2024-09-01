@@ -16,7 +16,7 @@ body {
 }
 
 .logo2 img {
-    padding-bottom: 20%;
+    padding-bottom: 35%;
 }
 
 
@@ -66,21 +66,27 @@ body {
     position: absolute;
     /* left: 10%;
     right: 5%;  */
-    top: 67%;
+    /* top: 67%; */
+    top: 72%;
+
 }
 
 .num1 {
     position: absolute;
     left: 10%;
     right: 5%;
-    top: 72%;
+    /* top: 72%; */
+    top: 77%;
+
 }
 
 .num2 {
     position: absolute;
     left: 52%;
     right: 5%;
-    top: 72% !important;
+    /* top: 72% !important; */
+    top: 77%;
+
 
 }
 
@@ -88,28 +94,35 @@ body {
     position: absolute;
     left: 10%;
     right: 5%;
-    top: 80%;
+    /* top: 80%; */
+    top: 85%;
+
 }
 
 .num4 {
     position: absolute;
     left: 52%;
     right: 5%;
-    top: 80%;
+    /* top: 80%; */
+    top: 85%;
+
 }
 
 .num5 {
     position: absolute;
     left: 10%;
     right: 5%;
-    top: 88%;
+    /* top: 88%; */
+    top: 93%;
+
 }
 
 .num6 {
     position: absolute;
     left: 52%;
     right: 5%;
-    top: 88%;
+    /* top: 88%; */
+    top: 93%;
 }
 
 .button:hover {
