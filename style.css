@@ -47,7 +47,7 @@ body {
     width: 310px;
 
     /* height: 550px; */
-    height: 450px;
+    height: 470px;
 
     padding: 50px;
     padding-bottom: 45px;
@@ -89,7 +89,7 @@ body {
     /* margin-right: 250px !important;
     padding-right: 600px !important; */
     padding-bottom: 5% !important;
-    margin-top: 22% !important;
+    margin-top: 27% !important;
 }
 /*  */
 .num7 {
@@ -106,7 +106,7 @@ body {
 
 .num1 {
     position: static !important;
-    margin-top: 7px !important;
+    margin-top: 9px !important;
     /* position: relative !important;
     
     right: 40% !important;
@@ -118,7 +118,7 @@ margin-top: 18px !important; */
 
 .num2 {
     position: static !important;
-    margin-top: 7px !important;
+    margin-top: 9px !important;
 
 
 
@@ -133,7 +133,7 @@ margin-top: 18px !important; */
 .num3 {
 
     position: static !important;
-    margin-top: 1px !important;
+    margin-top: 2px !important;
 
     /* position: relative !important;
    
@@ -149,7 +149,7 @@ margin-top: 1px !important; */
 .num4 {
 
     position: static !important;
-    margin-top: 1px !important;
+    margin-top: 2px !important;
 
 
     /* position: absolute;
@@ -162,7 +162,7 @@ margin-top: 1px !important; */
 
 .num5 {
     position: static !important;
-    margin-top: 1px !important;
+    margin-top: 2px !important;
     /* position: relative !important;
     right: 40% !important;
 margin-right: 149px !important;
@@ -172,7 +172,7 @@ margin-top: 1px !important; */
 
 .num6 {
     position: static !important;
-    margin-top: 1px !important;
+    margin-top: 2px !important;
     /* position: absolute;
     left: 51% !important;
     right: 5%;
