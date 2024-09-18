@@ -16,7 +16,7 @@ body {
 
 .container {
     /* background-image: url('Background.jpg') !important; */
-    background-image: url('BackGround1.jpg') !important;
+    background-image: url('BG.png') !important;
     background-size: contain !important;
     background-position: center !important;
     background-repeat: no-repeat;
@@ -45,10 +45,16 @@ body {
     /* background-image: url('Background.jpg');
     background-size: cover; */
     /* width: 305px; */
-    width: 310px;
+    width: 320px;
 
     /* height: 550px; */
-    height: 600px;
+    height: 607px;
+
+
+    /* height: 600px; */
+    /* width: 310px; */
+
+
 
     padding: 50px;
     padding-bottom: 45px;
@@ -197,7 +203,9 @@ margin-top: 1px !important; */
 
 .button-division a {
     font-size: 10px !important;
-    color: #D3A53D;
+    /* color: #D3A53D; */
+    color: #a58d49;
+
 }
 
 .button svg {
@@ -215,11 +223,13 @@ margin-top: 1px !important; */
     justify-items: center;
     padding: 2px 17px !important;
     padding-right: 20px !important;
-    color: #D3A53D;
+    /* color: #D3A53D; */
+    color:#a58d49;
     /* width: fit-content; */
     background-color: rgba(10, 52, 64, 0.5);
     text-decoration: none;
-    border: 1px solid #D3A53D;
+    /* border: 1px solid #D3A53D; */
+        border: 1px solid #a58d49;
     border-radius: 2px;
     /* font-weight: bold; */
     width: 77px !important;
@@ -236,7 +246,7 @@ body {
     width: 100vw;
     height: 100vh;
     /* background-image: url('Background.jpg'); */
-    background-image: url('BackGround1.jpg');
+    background-image: url('BG.png');
 
 
     background-position: center;
@@ -284,11 +294,14 @@ body {
     justify-items: center;
     padding: 2px 10px;
     padding-right: 25px;
-    color: #D3A53D;
+    /* color: #D3A53D; */
+    color:#a58d49;
     /* width: fit-content; */
     background-color: rgba(10, 52, 64, 0.5);
     text-decoration: none;
-    border: 1px solid #D3A53D;
+    /* border: 1px solid #D3A53D; */
+    border: 1px solid #a58d49;;
+
     border-radius: 2px;
     /* font-weight: bold; */
     width: 100px;
@@ -372,7 +385,10 @@ body {
 
 .button-division a {
     font-size: 12px;
-    color: #D3A53D;
+    /* color: #D3A53D; */
+    color: #a58d49;
+
+
 }
 
 .button svg {
