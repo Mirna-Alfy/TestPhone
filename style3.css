@@ -1,5 +1,6 @@
 @media (min-width:950) {}
 
+
 body {
     /* margin-top: 200px; */
     margin: 0;
@@ -68,7 +69,7 @@ body {
 
     /* height: 640px; */
     /* height: 565px; */
-    height: 570px;
+    /* height: 570px; */
 
 
     /* padding-bottom: 50px; */
@@ -85,8 +86,8 @@ body {
 
 
 
-    background-image: url('Background.jpg');
-    background-size: cover;
+    /* background-image: url('Background.jpg');
+    background-size: cover; */
     /* width: 305px; */
     width: 310px;
 
@@ -128,8 +129,8 @@ body {
 }
 
 .logo img {
-    width: 400px;
-    text-align:  center;
+    /* width: 150%;
+    text-align:  center; */
     /* margin-right: 250px !important;
     padding-right: 600px !important; */
 }
@@ -183,9 +184,9 @@ body {
 
 @media (max-width:376px) {
     .container {
-        justify-content: space-between;
+        /* justify-content: space-between;
         background-image: url('Background.jpg');
-        background-size: contain;
+        background-size: contain; */
         background-repeat: no-repeat;
         width: 375px;
         height: 667px;
@@ -197,6 +198,10 @@ body {
         margin: 0;
         padding-bottom: 55px;
     }
+    /* .mb-5{
+
+        margin-bottom: 200px !important;
+    } */
 
     /* .spacing {
        
@@ -217,19 +222,27 @@ body {
 }
 @media (max-width:415px)and (min-width:377px) {
     .container {
-        justify-content: space-between;
-        background-image: url('Background.jpg');
+        /* justify-content: space-between;
+        background-image: url('Backgnd.jpg');
         background-size: contain;
-        background-repeat: no-repeat;
-        width: 415px;
-        height: 1000px;
+        background-repeat: no-repeat; */
+        /* width: 393px !important;
+        height:873px !important; */
         /* padding: 40px; */
         /* 
         display: flex;
         flex-direction: column;
         box-sizing: border-box; */
+        width: 375px;
+        height: 667px;
         margin: 0;
         /* padding-bottom: 55px; */
+    }
+    .body{
+        justify-content: space-between;
+        background-image: url('Background.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     /* .spacing {
