@@ -99,7 +99,9 @@ a{
         /* margin-right: 250px !important;
     padding-right: 600px !important; */
         padding-bottom: 5% !important;
-        margin-top: 113% !important;
+        /* margin-top: 113% !important; */
+        margin-top: 111.9% !important;
+
 
     }
 
@@ -372,7 +374,9 @@ body {
     left: 10%;
     right: 5%;
     /* top: 72%; */
-    top: 78%;
+    /* top: 78%; */
+    top: 77.8%;
+
 
 }
 
@@ -381,8 +385,8 @@ body {
     left: 52%;
     right: 5%;
     /* top: 72% !important; */
-    top: 78%;
-
+    /* top: 78%; */
+    top: 77.8%;
 
 }
 
@@ -391,7 +395,7 @@ body {
     left: 10%;
     right: 5%;
     /* top: 80%; */
-    top: 85.5%;
+    top: 85.3%;
     width: 105px !important;
     padding-right: 20px !important;
 }
@@ -410,7 +414,7 @@ body {
     left: 52%;
     right: 5%;
     /* top: 80%; */
-    top: 85.5%;
+    top: 85.3%;
 
 }
 
@@ -419,7 +423,7 @@ body {
     left: 10%;
     right: 5%;
     /* top: 88%; */
-    top: 94.5%;
+    top: 94.3%;
 
 }
 
@@ -428,7 +432,7 @@ body {
     left: 52%;
     right: 5%;
     /* top: 88%; */
-    top: 94.5%;
+    top: 94.3%;
 }
 
 .button:hover {
