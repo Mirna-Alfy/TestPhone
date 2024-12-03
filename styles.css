@@ -295,4 +295,21 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.branches {
+  width: 100%;
+  overflow: hidden;
+}
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%; /* Ensures one slide takes up 100% of the width */
+}
 
