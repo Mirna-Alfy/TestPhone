@@ -313,3 +313,30 @@ body {
   flex: 0 0 100%; /* Ensures one slide takes up 100% of the width */
 }
 
+.image-container {
+  width: 100%;
+  overflow: hidden;
+} .image-container {
+  width: 100%;
+  overflow: hidden !important;
+} @media (max-width: 768px) {
+  .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .image-container img {
+      max-width: 90%;
+      margin-bottom: 10px;
+  }
+ }
+ /*img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
+body{
+  width: 100vw;
+}
