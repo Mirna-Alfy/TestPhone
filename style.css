@@ -4,42 +4,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .d-flex {
+}
+
+.d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Set height if vertical centering is required */
-  }
-  div.s123-module-headers {
+    height: 100%;
+    /* Set height if vertical centering is required */
+}
+
+div.s123-module-headers {
     white-space: normal;
-  }
-  .s123-module-headers {
+}
+
+.s123-module-headers {
     white-space: normal !important;
-  }
-  .s123-module-headers {
+}
+
+.s123-module-headers {
     white-space: normal !important;
-  }
-  #section-169 .s123-module-headers {
+}
+
+#section-169 .s123-module-headers {
     white-space: normal !important;
-  }
-  div.s123-module-headers {
+}
+
+div.s123-module-headers {
     white-space: normal !important;
-  }
-  div.s123-module-headers {
+}
+
+div.s123-module-headers {
     white-space: normal;
-  }
-  .s123-module-headers {
+}
+
+.s123-module-headers {
     white-space: normal !important;
-  }
-  .s123-module-headers .m-h-item span, .s123-module-headers .m-h-item {
+}
+
+.s123-module-headers .m-h-item span,
+.s123-module-headers .m-h-item {
     white-space: normal !important;
     word-wrap: break-word;
     margin-top: 0;
     margin-bottom: 10px;
-}     
-#mainNav {
+}
+
+/* #mainNav {
     box-shadow: none;
     border: none;
     color: white !important;
@@ -58,12 +69,12 @@
 
   }
   #mainNav {
-    position: fixed; /* Stick to the top */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: transparent; /* Initially transparent */
-    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    background: transparent; 
+    transition: background-color 0.3s ease-in-out;
   }
   
   #mainNav.scrolled {
@@ -71,23 +82,30 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.9; /* Optional */
+    opacity: 0.9;
   }
   #mainNav {
     background-image: url('https://images.cdn-files-a.com/ready_uploads/media/4967404/2000_5ea9898e06a3e.jpg'); 
     background-position: center center; 
     background-size: cover; 
     background-repeat: no-repeat; 
-    opacity: 0.9; /* Optional: Slight transparency for effect */
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for scrolling */
+    opacity: 0.9; 
+    transition: background-color 0.3s ease-in-out; 
   }
   #mainNav {
-    background: transparent; /* No background color */
-    box-shadow: none; /* Remove shadow if it exists */
+    background: transparent; 
+    box-shadow: none; 
     color: white !important;
-  }
-  body {
+  } */
+body {
     font-family: 'Rubik', sans-serif !important;
 }
-    
-  
+
+@media (max-width: 767px) {
+    #section-169 {
+        padding-top: 0px !important;
+    }
+}
+.cc{
+    line-height: 35px;
+}
