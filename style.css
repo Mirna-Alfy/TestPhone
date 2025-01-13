@@ -115,3 +115,7 @@ h1{
 .nav-item a{
     font-size: 15px !important;
 }
+.container:not(:first-child){
+margin-top: 150px !important;
+margin-bottom: 150px !important;
+}
