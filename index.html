@@ -127,8 +127,8 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+            <div class="collapse navbar-collapse" id="navbarNav"   >
+                <ul class="navbar-nav ms-auto pe-xl-5 pe-lg-0" >
                     <li class="nav-item">
                         <a class="nav-link" href="#about-us">About Us</a>
                     </li>
@@ -239,15 +239,15 @@
                             <div class="headers-form-wrap preview-highlighter bg-primary-gray header-box-shadow box-border-style-1"
                                 data-open-tool="contactBox"
                                 style="width: 100%; max-width: 400px; margin: 0;  box-sizing: border-box;">
-                                <form class="breakable contactUsForm">
+                                <form id="form" class="breakable contactUsForm">
                                     <div>
                                         <div class="form-group">
-                                            <input type="text" name="contact_name" placeholder="Name"
+                                            <input type="text" name="Name" placeholder="Name"
                                                 class="form-control" required=""
                                                 data-msg-required="This field is required.">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="contact_Country" placeholder="Country"
+                                            <input type="text" name="Country" placeholder="Country"
                                                 class="form-control" required=""
                                                 data-msg-required="This field is required.">
                                         </div>
@@ -256,17 +256,17 @@
                                                 class="form-control">
                                         </div> -->
                                         <div class="form-group">
-                                            <input type="text" name="contact_email"
+                                            <input type="text" name="Email or Phone"
                                                 placeholder="Email address or Phone number"
                                                 class="form-control s123-force-ltr" required=""
                                                 data-msg-required="This field is required." data-rule-email="true"
                                                 data-msg-email="Please enter a valid email.">
                                         </div>
                                         <div class="form-group">
-                                            <textarea class="form-control" name="contact_message" placeholder="Message"
+                                            <textarea class="form-control" name="Message" placeholder="Message"
                                                 style="min-height: 100px;"></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-primary btn-block">Send</button>
+                                        <button id="submit" type="submit" class="btn btn-primary btn-block">Send</button>
                                     </div>
 
                                 </form>
@@ -431,16 +431,16 @@
         </div>
     </section>
     <section id="how-it-works" class="container mt-3 mb-1" style=" margin-bottom: 0px !important;">
-        <div class="ps-4">
-            <h1 class="pb-3" style="text-decoration:wavy;">How to learn with Bayan AR</h1>
-            <p style="font-size: 22px; font-weight:400;" class="cc">
-    
-                With Bayan AR you can choose between two distinct learning methods:
-            </p>
-        </div>
+       
         <div class="row">
-         
-        <div class="col-lg-8 col-md-6 col-sm-12  justify-content-center align-items-center p-5 ">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12  justify-content-center align-items-center p-5 pb-0">
+                <h1 class="pb-3" style="text-decoration:wavy;">How to learn with Bayan AR</h1>
+                <p style="font-size: 22px; font-weight:400;" class="cc">
+        
+                    With Bayan AR you can choose between two distinct learning methods:
+                </p>
+            </div>
+        <div class="col-lg-8 col-md-6 col-sm-12  justify-content-center align-items-center p-5 pt-3">
         
         <p style="font-size: 22px; font-weight:400;" class="cc">
            <span style="font-weight: bold;">The first:</span>  A live group class with your teacher for 50 minutes and with 8 students in the group. 
@@ -577,45 +577,64 @@
     // });
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('.contactUsForm');
+//     document.addEventListener('DOMContentLoaded', () => {
+//   const form = document.querySelector('.contactUsForm');
 
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
+//   if (form) {
+//     form.addEventListener('submit', async (e) => {
+//       e.preventDefault();
 
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
+//       const formData = new FormData(form);
+//       const data = Object.fromEntries(formData.entries());
 
-      const webhookURL = "https://script.google.com/macros/s/AKfycbxodf9k4D6HzXmZJu_VrC3jyVn1T9B-wH8Nje6s6A3gGvhsX4lCogKcJ6DVoVkzrVL7Vw/exec";
+//       const webhookURL = "https://script.google.com/macros/s/AKfycbxodf9k4D6HzXmZJu_VrC3jyVn1T9B-wH8Nje6s6A3gGvhsX4lCogKcJ6DVoVkzrVL7Vw/exec";
 
-      try {
-        const response = await fetch(webhookURL, {
-          method: "POST",
-          mode: 'no-cors',
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-          body: new URLSearchParams(data).toString(),
-        });
+//       try {
+//         const response = await fetch(webhookURL, {
+//           method: "POST",
+//           mode: 'no-cors',
+//           headers: {
+//             "Content-Type": "application/x-www-form-urlencoded",
+//           },
+//           body: new URLSearchParams(data).toString(),
+//         });
 
-        if (response.ok) {
-          const result = await response.json();
-          alert(result.message);
-        } else {
-          alert("Error submitting form. Please try again.");
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        alert("Error submitting form.");
-      }
-    });
-  } else {
-    console.error("Form element not found.");
-  }
-});
+//         if (response.ok) {
+//           const result = await response.json();
+//           alert(result.message);
+//         } else {
+//           alert("Error submitting form. Please try again.");
+//         }
+//       } catch (error) {
+//         console.error("Error:", error);
+//         alert("Error submitting form.");
+//       }
+//     });
+//   } else {
+//     console.error("Form element not found.");
+//   }
+// });
 
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwql4qsv5_nSr91AGKymLmFgssyp5LmY9Bz0bH0pQ8jtpA3hiqXWfkcy87yhzTxKCZA2g/exec'
+const form = document.querySelector("#form")
+const submitButton = document.querySelector("#submit")
+form.addEventListener('submit', e => {
+submitButton.disabled = true
+e.preventDefault()
+let requestBody = new FormData(form)
+fetch(scriptURL, { method: 'POST', body: requestBody})
+.then(response => {
+alert('Success!', response)
+submitButton.disabled = false
+})
+.catch(error => {
+alert('Error!', error.message)
+submitButton.disabled = false
+
+   }
+   )
+})
 
 
 </script>

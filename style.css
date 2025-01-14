@@ -113,7 +113,7 @@ h1{
     color: rgb(17, 114, 121);
 }
 .nav-item a{
-    font-size: 15px !important;
+    font-size: 14px !important;
 }
 .container:not(:first-child){
 margin-top: 150px !important;
