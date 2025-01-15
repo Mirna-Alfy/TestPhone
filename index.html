@@ -29,6 +29,7 @@
 
 
     <style>
+      
         @import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
 
         @font-face {
@@ -110,6 +111,10 @@
             }
 
         }
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
     </style>
 </head>
 
@@ -521,7 +526,28 @@
       </a> -->
     </div>
   </footer>
- 
+ <!-- Loading Modal -->
+ <div id="loadingModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 9999;  align-items: center; justify-content: center;">
+    <div style="background-color: white; padding: 20px; border-radius: 10px; text-align: center; width: 200px;">
+        <h4>Loading...</h4>
+        <div class="spinner" style="margin: 20px auto 0 auto; width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid #1990a0; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+</div>
+
+<!-- <div id="loadingModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 9999;  align-items: center; justify-content: center;">
+    <div style="background-color: white; padding: 20px; border-radius: 10px; text-align: center;">
+        <h4>Loading...</h4>
+        <div class="spinner" style=" margin-top: 10px; width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid #1990a0; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+</div> -->
+<div id="responseModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 9999; align-items: center; justify-content: center;">
+    <div style="background-color: white; padding: 20px; border-radius: 10px; text-align: center;">
+        <div id="responseIcon" style="font-size: 50px; margin-bottom: 10px;"></div>
+        <h4 id="responseMessage"></h4>
+        <button onclick="closeResponseModal()" style="margin-top: 20px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">OK</button>
+    </div>
+</div>
+
   <!-- Font Awesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
@@ -615,26 +641,62 @@
 //   }
 // });
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwql4qsv5_nSr91AGKymLmFgssyp5LmY9Bz0bH0pQ8jtpA3hiqXWfkcy87yhzTxKCZA2g/exec';
+    const form = document.querySelector("#form");
+    const submitButton = document.querySelector("#submit");
+    const loadingModal = document.querySelector("#loadingModal");
+    const responseModal = document.querySelector("#responseModal");
+    const responseIcon = document.querySelector("#responseIcon");
+    const responseMessage = document.querySelector("#responseMessage");
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwql4qsv5_nSr91AGKymLmFgssyp5LmY9Bz0bH0pQ8jtpA3hiqXWfkcy87yhzTxKCZA2g/exec'
-const form = document.querySelector("#form")
-const submitButton = document.querySelector("#submit")
-form.addEventListener('submit', e => {
-submitButton.disabled = true
-e.preventDefault()
-let requestBody = new FormData(form)
-fetch(scriptURL, { method: 'POST', body: requestBody})
-.then(response => {
-alert('Success!', response)
-submitButton.disabled = false
-})
-.catch(error => {
-alert('Error!', error.message)
-submitButton.disabled = false
+    form.addEventListener('submit', e => {
+        e.preventDefault(); // Prevent default form submission
+        submitButton.disabled = true; // Disable the submit button
+        loadingModal.style.display = "flex"; // Show the loading modal
 
-   }
-   )
-})
+        let requestBody = new FormData(form);
+        fetch(scriptURL, { method: 'POST', body: requestBody })
+            .then(response => {
+                loadingModal.style.display = "none"; // Hide the loading modal
+                showResponseModal("✔️", "Success! Your data was submitted successfully."); // Show success modal
+                form.reset(); // Reset the form
+                submitButton.disabled = false; // Re-enable the submit button
+            })
+            .catch(error => {
+                loadingModal.style.display = "none"; // Hide the loading modal
+                showResponseModal("❌", "Error! " + error.message); // Show error modal
+                submitButton.disabled = false; // Re-enable the submit button
+            });
+    });
+
+    function showResponseModal(icon, message) {
+        responseIcon.textContent = icon; // Set the icon (success or error)
+        responseMessage.textContent = message; // Set the message
+        responseModal.style.display = "flex"; // Show the response modal
+    }
+
+    function closeResponseModal() {
+        responseModal.style.display = "none"; // Hide the response modal
+    }
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbwql4qsv5_nSr91AGKymLmFgssyp5LmY9Bz0bH0pQ8jtpA3hiqXWfkcy87yhzTxKCZA2g/exec'
+// const form = document.querySelector("#form")
+// const submitButton = document.querySelector("#submit")
+// form.addEventListener('submit', e => {
+// submitButton.disabled = true
+// e.preventDefault()
+// let requestBody = new FormData(form)
+// fetch(scriptURL, { method: 'POST', body: requestBody})
+// .then(response => {
+// alert('Success!', response)
+// submitButton.disabled = false
+// })
+// .catch(error => {
+// alert('Error!', error.message)
+// submitButton.disabled = false
+
+//    }
+//    )
+// })
 
 
 </script>
