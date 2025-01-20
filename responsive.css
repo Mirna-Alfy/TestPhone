@@ -1,0 +1,205 @@
+
+@media (min-width: 320px) and (max-width: 575px){
+    html{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 2.25rem;
+    }
+    h2{
+        font-size: 1.7441em;
+    }
+    .pt-150{
+      padding-top: 50px;
+    }
+   
+    .counter{
+        margin-top: 25px;
+    }
+
+    .download-btn a.btn{
+        margin: 7px 0;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 992px){
+    .navbar{
+        padding: .95rem 1rem;
+    }
+
+    .white-bg.affix, .custom-nav.affix, .navbar.white-bg{
+        background: #ffffff !important;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .white-bg.custom-nav ul li a, .custom-nav ul li a{
+        color: #081d43 !important;
+    }
+    .white-bg.navbar .navbar-toggler span{
+        color: #202877;
+    }
+
+    .ptb-100{
+        padding: 55px 0;
+    }
+    .pb-100{
+        padding-bottom: 55px;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar{
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        background: transparent;
+        transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
+    }
+}
+@media (max-width: 995px){
+    .download-btn a.btn{
+        margin: 7px 0;
+        margin-top: 20px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .pt-150{
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 990px) {
+    #navbarSupportedContent{
+        background-color:white;
+        z-index:1000 !important;
+        box-shadow: 1px 2px #e4e7f1;
+    }   
+}
+@media (max-width: 990px) {
+    .action-btn {
+        text-align: center !important;
+    }
+}
+
+@media (max-width:575px) {
+
+    .footer-p .nav-link {
+
+        text-align: center !important;
+    }
+
+    .footerlinks h5 {
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .page-header-content {
+        padding-top: 3rem !important;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .animation-four,
+    .animation-new {
+        display: none !important;
+    }
+}
+@media (max-width: 575px) {
+
+    .hero-content {
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-animation-img {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .animation-one {
+        animation: move-one 7s ease-in-out infinite;
+    }
+
+    @keyframes move-one {
+        0% {
+            transform: translateX(0) translateY(5px)
+        }
+
+        50% {
+            transform: translateX(0) translateY(-5px)
+        }
+
+        100% {
+            transform: translateX(0) translateY(5px)
+        }
+    }
+
+    .animation-two {
+        position: absolute;
+        bottom: -10px;
+        animation: move-two 8s ease-in-out infinite;
+    }
+
+    @keyframes move-two {
+        0% {
+            transform: translateX(-25px) translateY(-225px)
+        }
+
+        50% {
+            transform: translateX(-25px) translateY(-205px)
+        }
+
+        100% {
+            transform: translateX(-25px) translateY(-225px)
+        }
+    }
+
+    .animation-three {
+        position: absolute;
+        -webkit-animation: move-three 9s ease-in-out infinite;
+        animation: move-three 9s ease-in-out infinite
+    }
+
+    @keyframes move-three {
+        0% {
+            transform: translateX(-45px) translateY(-225px)
+        }
+
+        50% {
+            transform: translateX(-45px) translateY(-205px)
+        }
+
+        100% {
+            transform: translateX(-45px) translateY(-225px)
+        }
+    }
+
+    .animation-four {
+        position: absolute;
+        animation: move-four 6s ease-in-out infinite
+    }
+
+    .animation-new {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    @keyframes move-four {
+        0% {
+            transform: translateX(330px) translateY(-215px)
+        }
+
+        50% {
+            transform: translateX(330px) translateY(-240px)
+        }
+
+        100% {
+            transform: translateX(330px) translateY(-215px)
+        }
+    }
+
+}
